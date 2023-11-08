@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Poppins&family=Roboto:ital,wght@0,700;1,400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto' sans-serif;
+}
+.categories {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-item {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 33.33%;
+  border: 2px solid white;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.category-item-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.category-item-inner > div {
+  padding: 5px 9px;
+  background: black;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+.featured-product-title {
+  text-align: center;
+}
+.featured-product {
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-gap: 20px;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px; */
+}
+@media (max-width: 767px) {
+  .featured-product {
+    grid-template-columns: 1fr;
+  }
+}
+/* .featured-product > div:first-child {
+  border: 1px solid black;
+} */
+.filter {
+  background: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+.filter > h2 {
+  margin: 0;
+}
+.filter-section {
+  margin-bottom: 20px;
+}
+.filter-section > strong {
+  margin: 10px 0;
+  display: block;
+}
+.filter-label {
+  display: block;
+  margin: 5px 0;
+}
+.featured-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+.featured-product-item {
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.featured-product-item-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.featured-product-item > .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.featured-product-item > .description {
+  color: #666;
+}
+.featured-product-item > .price {
+  font-style: italic;
+}
+button {
+  outline: none;
+  background: black;
+  font-family: 'Roboto' sans-serif;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 9px 0;
+}
+@media (max-width: 767px) {
+  .all-filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter-section {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .category-item {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .category-item {
+    min-width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .featured-product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .featured-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.red {
+  color: red;
+}
